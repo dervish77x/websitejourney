@@ -56,7 +56,7 @@ nav li a:hover {
 
 /* Link Styles */
 a {
-    color: dark;
+    color: dark black;
     text-decoration: none;
     font-weight: bold;
 }
@@ -75,4 +75,3 @@ main {
     margin-top: 2rem;
     border-radius: 8px; /* Rounds the corners */
 }
-
