@@ -1,41 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-	<body>
-    <button onclick="goBack()">Back</button>
-	
-	<script>
-	    function goBack() {
-		    window.history.back();
-		}
-	</script>
-	</script>
-	<style>
-	    body {
-		    background-color: white;
-		}
-	</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>About Me</h1>
-    <p>Hi, I'm David Rebollo, a Computer Science student. I'm passionate about developing software and websites.
-	   my experience is based on certifications and at home daily practice developed over years.</p>
 
-    <h2>My Skills</h2>
-    <ul>
-        <li>HTML</li>
-		<li>AWS</li>
-		<li>Linux</li>
-		<li>MySQL</li>
-        <li>CSS</li>
-        <li>Microsoft</li>
-        <li>Python</li>
-		<li>Basic IT</li>
-    </ul>
+    <header>
+        <h1>My Progress Page</h1>
+        <p class="centered-text">
+            Welcome to my first page, here I submit and test some of my computer skills to the public, so far I've learned the basics of Python, some HTML and CSS through 
+            <a href="https://www.w3schools.com" target="_blank">w3schools</a>. I also have a few IT certifications from
+            <a href="https://www.netacad.com/" target="_blank">Cisco Networking Academy.</a>
+        </p>
+    </header>
 
-    <h2>Contact Me</h2>
-    <p>You can reach me at david443linux@gmail.com</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>About Me and My Journey</h2>
+        <p>I am a passionate beginner in the field of computer skills and IT. My journey started with a curiosity about how things work, leading me to resources like w3schools and formal training through Cisco Networking Academy.</p>
+        
+        <h3>My Skills So Far:</h3>
+        <ul>
+            <li>Programming: Basic proficiency in Python (Data types, control flow, functions).</li>
+            <li>Web Development: Foundational knowledge of HTML structure and CSS styling.</li>
+            <li>Networking/IT: Certified skills from Cisco Networking Academy, covering core concepts of networking and infrastructure.</li>
+        </ul>
+        
+        <p>I am dedicated to continuous learning and plan to update this site regularly to track my progress and share new projects!</p>
+    </main>
+
 </body>
 </html>
