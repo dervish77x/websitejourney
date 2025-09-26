@@ -4,14 +4,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* A light grey background */
-    color: #333; /* Dark grey for text */
+    background-color: gray; /* A light grey background */
+    color: black; /* Dark grey for text */
     text-align: center; /* Center the body content */
 }
 
 /* Header Styles */
 header {
-    background-color: #007bff; /* A nice blue color */
+    background-color: purple; /* A nice blue color */
     color: white;
     padding: 2rem 0;
 }
@@ -34,11 +34,11 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* <-- REMOVED BULLETS FROM NAV */
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox for a horizontal layout */
-    justify-content: center; /* Center the navigation links */
+    display: flex; 
+    justify-content: center;
 }
 
 nav li a {
@@ -47,7 +47,7 @@ nav li a {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease; 
 }
 
 nav li a:hover {
@@ -56,7 +56,7 @@ nav li a:hover {
 
 /* Link Styles */
 a {
-    color: purple;
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -71,7 +71,21 @@ main {
     max-width: 800px;
     margin: 0 auto;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-top: 2rem;
-    border-radius: 8px; /* Rounds the corners */
+    border-radius: 8px; 
+}
+
+/* Style for lists within the main content (like the skills list) */
+main ul {
+    list-style-type: none; /* <-- REMOVED BULLETS FROM MAIN CONTENT LISTS */
+    padding: 0;          
+    text-align: left;    
+    max-width: 400px;     
+    margin: 1.5rem auto; 
+}
+
+/* Optional: Add some padding to the list items themselves for spacing */
+main ul li {
+    padding: 0.5rem 0;
 }
