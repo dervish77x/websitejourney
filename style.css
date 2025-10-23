@@ -4,14 +4,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: gray; /* A light grey background */
-    color: black; /* Dark grey for text */
+    background-color: #f4f4f4; /* A light grey background */
+    color: #333; /* Dark grey for text */
     text-align: center; /* Center the body content */
 }
 
 /* Header Styles */
 header {
-    background-color: purple; /* A nice blue color */
+    background-color: #007bff; /* A nice blue color */
     color: white;
     padding: 2rem 0;
 }
@@ -34,7 +34,7 @@ nav {
 }
 
 nav ul {
-    list-style-type: none; /* <-- REMOVED BULLETS FROM NAV */
+    list-style-type: none; /* Removed bullets from nav */
     margin: 0;
     padding: 0;
     display: flex; 
@@ -59,6 +59,7 @@ a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block; /* Helps link containers behave better */
 }
 
 a:hover {
@@ -78,7 +79,7 @@ main {
 
 /* Style for lists within the main content (like the skills list) */
 main ul {
-    list-style-type: none; /* <-- REMOVED BULLETS FROM MAIN CONTENT LISTS */
+    list-style-type: none; /* Removed bullets from main content lists */
     padding: 0;          
     text-align: left;    
     max-width: 400px;     
@@ -88,4 +89,47 @@ main ul {
 /* Optional: Add some padding to the list items themselves for spacing */
 main ul li {
     padding: 0.5rem 0;
+}
+
+/* ---------------------------------------------------------------- */
+/* NEW STYLES FOR BUTTONS AND IMAGES */
+/* ---------------------------------------------------------------- */
+
+/* Style for the back button on the confirmation page */
+.back-button {
+    background-color: #007bff; /* Uses primary blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Rule to ensure the link wrapping the image respects the container width */
+main a {
+    display: block; 
+    width: 100%;
+    margin: 0 auto; 
+}
+
+/* Styling for images inside the gallery or main content to fix size issues */
+.gallery-image {
+    max-width: 100%; /* Ensures image never overflows its container */
+    width: 100%;     /* Forces the image to take up 100% of the available space (max 800px) */
+    height: auto;    /* Maintains the image's aspect ratio */
+    border-radius: 8px; 
+    margin-top: 1.5rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Removes the default blue border from images that are links */
+a img {
+    border: none;
 }
