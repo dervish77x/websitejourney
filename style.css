@@ -4,8 +4,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* A light grey background */
-    color: #333; /* Dark grey for text */
+    background-color: gray /* A light grey background */
+    color: black /* Dark grey for text */
     text-align: center; /* Center the body content */
 }
 
@@ -133,3 +133,4 @@ main a {
 a img {
     border: none;
 }
+
