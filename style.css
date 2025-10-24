@@ -11,7 +11,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #007bff; /* A nice blue color */
+    background-color: green /* A nice blue color */
     color: white;
     padding: 2rem 0;
 }
@@ -133,4 +133,5 @@ main a {
 a img {
     border: none;
 }
+
 
