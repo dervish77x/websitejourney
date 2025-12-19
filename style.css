@@ -1,17 +1,21 @@
-/* General Body Styles */
+/* =========================================
+   1. General Body Styles
+   ========================================= */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* A light grey background */
-    color: #333; /* Dark grey for text */
-    text-align: center; /* Center the body content */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    text-align: center;
 }
 
-/* Header Styles */
+/* =========================================
+   2. Header Styles
+   ========================================= */
 header {
-    background-color: purple; /* A nice blue color */
+    background-color: #007bff; /* Primary Blue */
     color: white;
     padding: 2rem 0;
 }
@@ -27,9 +31,11 @@ header p {
     margin: 1rem auto;
 }
 
-/* Navigation Styles */
+/* =========================================
+   3. Navigation (The "Fixed" Section)
+   ========================================= */
 nav {
-    background-color: #333; /* A dark color for the nav bar */
+    background-color: #333; /* Dark background */
     overflow: hidden;
 }
 
@@ -39,19 +45,37 @@ nav ul {
     padding: 0;
     display: flex; 
     justify-content: center;
+    /* Forces all items to stay on a single horizontal line */
+    flex-wrap: nowrap; 
 }
 
 nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    /* Reduced horizontal padding from 20px to 12px to fit 6 buttons */
+    padding: 14px 12px; 
     text-decoration: none;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
+    /* Prevents tab names from breaking into two lines */
+    white-space: nowrap; 
+    font-size: 0.95rem;
 }
 
 nav li a:hover {
     background-color: #575757;
+}
+
+/* =========================================
+   4. Main Content (The White Frame)
+   ========================================= */
+main {
+    padding: 2rem;
+    max-width: 800px; /* Limits the width of the white frame */
+    margin: 2rem auto; /* Centers the frame and adds space above/below */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
 }
 
 /* Link Styles */
@@ -59,41 +83,43 @@ a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block; 
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Main Content Section */
-main {
-    padding: 2rem;
-    max-width: 800px; /* The white frame width */
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-top: 2rem;
-    border-radius: 8px; 
+/* =========================================
+   5. Gallery & Video Image Styling
+   ========================================= */
+
+/* This rule ensures the link around an image doesn't mess up centering */
+main a {
+    display: inline-block;
+    max-width: 100%;
 }
 
-/* Style for lists within the main content */
-main ul {
-    list-style-type: none; 
-    padding: 0;          
-    text-align: left;    
-    max-width: 400px;     
+.gallery-image {
+    /* Centering logic */
+    display: block;
     margin: 1.5rem auto; 
+    
+    /* Sizing logic to fit inside the white frame nicely */
+    max-width: 90%; 
+    height: auto;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-main ul li {
-    padding: 0.5rem 0;
+/* Removes default borders on linked images */
+a img {
+    border: none;
 }
 
-/* ---------------------------------------------------------------- */
-/* STYLES FOR BUTTONS AND IMAGES */
-/* ---------------------------------------------------------------- */
-
+/* =========================================
+   6. Buttons & Misc
+   ========================================= */
 .back-button {
     background-color: #007bff; 
     color: white;
@@ -109,31 +135,3 @@ main ul li {
 .back-button:hover {
     background-color: #0056b3;
 }
-
-/* Rule to ensure the link wrapping the image respects the container width */
-main a {
-    display: block; 
-    width: 100%;
-    margin: 0 auto; 
-}
-
-/* Styling for images inside the gallery or main content to fix size issues */
-.gallery-image {
-    max-width: 100%; 
-    height: auto;
-    
-    /* CENTERING FIX */
-    width: 90%; 
-    display: block;
-    margin: 1.5rem auto; 
-    /* -------------------------------------- */
-    
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* Removes the default blue border from images that are links */
-a img {
-    border: none;
-}
-
