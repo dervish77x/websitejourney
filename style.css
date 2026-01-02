@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: gray; /* Light grey background */
-    color: #333; /* Dark grey text */
+    color: black; /* Dark grey text */
     text-align: center;
 }
 
@@ -15,7 +15,7 @@ body {
    2. Header Styles
    ========================================= */
 header {
-    background-color: #007bff; /* Primary Blue */
+    background-color: gray; /* Primary Blue */
     color: white;
     padding: 2rem 0;
 }
@@ -135,4 +135,3 @@ a img {
 .back-button:hover {
     background-color: #0056b3;
 }
-
